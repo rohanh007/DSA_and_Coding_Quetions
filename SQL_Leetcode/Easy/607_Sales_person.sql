@@ -1,0 +1,1 @@
+select name from salesperson where sales_id NOT IN(select o.sales_id from Orders as o join company as c on o.com_id=c.com_id where c.name = "RED");
